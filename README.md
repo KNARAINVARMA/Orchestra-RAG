@@ -3,7 +3,6 @@
 [![Python](https://img.shields.io/badge/python-3.11%2B-blue?logo=python&logoColor=white)](#)
 [![LangGraph](https://img.shields.io/badge/LangGraph-1.2%2B-orange?logo=langchain&logoColor=white)](#)
 [![Qdrant](https://img.shields.io/badge/Qdrant-vector%20db-DC244C?logo=qdrant&logoColor=white)](#)
-[![License](https://img.shields.io/badge/license-MIT-green)](#)
 
 **Orchestra RAG** is a highly modular, production-ready **Agentic Retrieval-Augmented Generation (RAG)** engine built on **LangGraph**. Designed to handle complex, multi-part, and ambiguous user queries, the system acts as an intelligent state machine that decomposes requests, schedules parallel retrieval sub-agents, manages memory, compresses context, and pauses for human clarification when query intent is unclear.
 
@@ -172,8 +171,3 @@ The `notebooks/evaluation.ipynb` script integrates with **Ragas** to assess your
 * **Context Recall**: Quality of the retrieval.
 * **Faithfulness**: Absence of hallucinations.
 * **Answer Relevance**: Usefulness of the final synthesized output.
-
----
-
-## 📄 License
-This project is licensed under the MIT License - see the `LICENSE` file for details.

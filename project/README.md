@@ -531,7 +531,7 @@ For additional details on integrating Langfuse with LangChain or LangGraph, see 
 ### Hosting options
 
 - **Langfuse Cloud** — sign up at [cloud.langfuse.com](https://cloud.langfuse.com) and check the current plan limits there.
-- **Self-hosted** — MIT-licensed, deploy with Docker Compose. See the [official self-hosting docs](https://langfuse.com/self-hosting).
+- **Self-hosted** — open-source, deploy with Docker Compose. See the [official self-hosting docs](https://langfuse.com/self-hosting).
 
 For a conceptual tracing guide and platform context, see [`notebooks/observability.ipynb`](../notebooks/observability.ipynb).
 
