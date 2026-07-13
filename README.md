@@ -1,14 +1,12 @@
 # Orchestra RAG
 
-[![Python](https://img.shields.io/badge/python-3.11%2B-blue?logo=python&logoColor=white)](#)
-[![LangGraph](https://img.shields.io/badge/LangGraph-1.2%2B-orange?logo=langchain&logoColor=white)](#)
-[![Qdrant](https://img.shields.io/badge/Qdrant-vector%20db-DC244C?logo=qdrant&logoColor=white)](#)
+
 
 **Orchestra RAG** is a highly modular, production-ready **Agentic Retrieval-Augmented Generation (RAG)** engine built on **LangGraph**. Designed to handle complex, multi-part, and ambiguous user queries, the system acts as an intelligent state machine that decomposes requests, schedules parallel retrieval sub-agents, manages memory, compresses context, and pauses for human clarification when query intent is unclear.
 
 ---
 
-## 🏗️ System Architecture
+ System Architecture
 
 Unlike standard, linear RAG pipelines that execute simple search-and-synthesize loops, Orchestra RAG orchestrates state transitions dynamically.
 
@@ -47,7 +45,7 @@ graph TD
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
 * **Multi-Agent Map-Reduce (Fan-Out/Fan-In)**: Complex, compound queries are decomposed into unique sub-questions, each executed in parallel by dedicated sub-agents to optimize latency and search coverage.
 * **Hierarchical Ingestion (Parent-Child Chunking)**: Indexes short child segments for precise vector similarity matches while retrieving larger parent blocks to maintain context for response generation.
@@ -59,7 +57,7 @@ graph TD
 
 ---
 
-## 📂 Project Organization
+## Project Organization
 
 ```
 ├── project/
@@ -89,7 +87,7 @@ graph TD
 
 ---
 
-## ⚙️ Configuration Guide
+##  Configuration Guide
 
 All system settings are consolidated in `project/config.py`. Here are the primary settings available to customize your deployment:
 
@@ -107,7 +105,7 @@ All system settings are consolidated in `project/config.py`. Here are the primar
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 * Python 3.11+
@@ -165,7 +163,7 @@ Orchestra RAG is designed to be model-agnostic. To swap your LLM from local Olla
 
 ---
 
-## 📊 Evaluation & Benchmarking
+## Evaluation & Benchmarking
 
 The `notebooks/evaluation.ipynb` script integrates with **Ragas** to assess your RAG system's outputs. You can measure:
 * **Context Recall**: Quality of the retrieval.
